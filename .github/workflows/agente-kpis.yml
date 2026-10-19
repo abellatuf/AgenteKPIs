@@ -4,6 +4,9 @@
 #
 # Secrets requeridos: GEMINI_API_KEY, OPENROUTER_API_KEY o ANTHROPIC_API_KEY, NOTION_TOKEN, JIRA_BASE_URL, JIRA_EMAIL, JIRA_API_TOKEN
 # Opcional (secret o variable): AGENTE_PROVEEDOR (gemini | anthropic). JIRA_BASE_URL también puede ser variable.
+#
+# El reporte (salida/) no se sube como artefacto: en un repo público lo podría descargar
+# cualquier usuario de GitHub, y se arma con el feedback real de Notion.
 
 name: Agente KPIs
 
@@ -70,10 +73,3 @@ jobs:
             npm start -- --producto "$p" $flag
             echo "::endgroup::"
           done
-      - name: Guardar reportes
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: reportes-agente-kpis
-          path: salida/
-          if-no-files-found: ignore

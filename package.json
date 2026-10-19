@@ -13,16 +13,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/latufabel/agente-kpis.git"
+    "url": "git+https://github.com/abellatuf/AgenteKPIs.git"
   },
   "keywords": [],
   "author": "Abel Latuf",
   "license": "MIT",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/latufabel/agente-kpis/issues"
+    "url": "https://github.com/abellatuf/AgenteKPIs/issues"
   },
-  "homepage": "https://github.com/latufabel/agente-kpis#readme",
+  "homepage": "https://github.com/abellatuf/AgenteKPIs#readme",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.132.1",
     "@google/genai": "^2.28.0",
