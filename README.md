@@ -200,8 +200,8 @@ Además de la evaluación automática, el sistema se probó de punta a punta con
 Requisitos: **Node.js 22 o superior**.
 
 ```bash
-git clone https://github.com/latufabel/agente-kpis.git
-cd agente-kpis
+git clone https://github.com/abellatuf/AgenteKPIs.git
+cd AgenteKPIs
 npm install
 ```
 

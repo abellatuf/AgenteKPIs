@@ -4,7 +4,7 @@ Para probar o hacer una demostración, sin esperar la corrida automática (días
 
 ## Antes de empezar (una sola vez)
 
-1. Abrí la carpeta del proyecto en VS Code: **Archivo → Abrir carpeta…** → `agente-kpis`.
+1. Abrí la carpeta del proyecto en VS Code: **Archivo → Abrir carpeta…** → `AgenteKPIs`.
 2. Si nunca lo hiciste, instalá las dependencias: **Terminal → Nuevo terminal**, escribí `npm install` y apretá Enter.
 3. Revisá que el archivo `.env` tenga las claves (ver [`.env.example`](../.env.example)). Sin claves solo funciona la opción 1.
 
