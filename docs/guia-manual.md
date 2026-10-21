@@ -1,6 +1,6 @@
 # Guía: correr el Agente KPIs a mano desde VS Code
 
-Para probar o hacer una demostración, sin esperar la corrida automática (días hábiles a las 08:00 y a las 15:00 de Argentina).
+Para probar o hacer una demostración. La corrida automática (días hábiles a las 08:00 y a las 15:00 de Argentina) está pausada por razones prácticas, así que hoy el agente se corre a mano: desde acá o con **Run workflow** en GitHub Actions.
 
 ## Antes de empezar (una sola vez)
 

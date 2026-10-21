@@ -231,9 +231,10 @@ Para sumar el agente de **mejoras sugeridas**, agregá `--mejoras` o poné `AGEN
 
 `Ctrl+Shift+P` → **Tasks: Run Task** → elegí demo, evaluar, probar, publicar o reiniciar el feedback para una demo. Guía paso a paso: [`docs/guia-manual.md`](docs/guia-manual.md).
 
-### 3. Automático (GitHub Actions)
+### 3. Desde GitHub Actions
 
-- [`agente-kpis.yml`](.github/workflows/agente-kpis.yml): días hábiles a las 08:00 y a las 15:00 (Argentina) corre todos los productos de `config/productos/` y publica. También se puede disparar a mano eligiendo producto y si publica.
+- [`agente-kpis.yml`](.github/workflows/agente-kpis.yml): se dispara a mano (**Actions → Agente KPIs → Run workflow**) eligiendo producto y si publica.
+  > **Corrida programada pausada.** El workflow estaba preparado para correr solo días hábiles a las 08:00 y a las 15:00 (Argentina), con todos los productos de `config/productos/` y publicando. Por razones prácticas la pausamos y por ahora corre solo a mano. Para reactivarla, descomentá el bloque `schedule` del workflow.
 - [`ci.yml`](.github/workflows/ci.yml): en cada push corre typecheck, la demo y la evaluación.
 
 Secrets del repositorio: la clave del modelo (`GEMINI_API_KEY`, `OPENROUTER_API_KEY` o `ANTHROPIC_API_KEY`), `NOTION_TOKEN`, `JIRA_EMAIL`, `JIRA_API_TOKEN` y `JIRA_BASE_URL`. Opcional: `AGENTE_PROVEEDOR` (`gemini`, `openrouter` o `anthropic`).
